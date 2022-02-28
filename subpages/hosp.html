@@ -8,41 +8,40 @@
 
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-        <link rel="stylesheet" href="../assets/css/styles.css">
+        <link rel="stylesheet" href="../assets/css/stylehosp.css">
 
         <title>AIESEC Bolivia</title>
     </head>
     <body>
-        <div class="load" id="load">
-            <img src="../assets/img/blueman-blue.gif" alt="" class="load__gif">
-        </div>
+        
 
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">
+                <a href="../index.html" class="nav__logo">
                     <img src="../assets/img/Blue-Logo.png" alt="" class="nav__logo-img">
+                    
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#" class="nav__link active-link">Nosotros</a>
+                            <a href="#" class="nav__link">Nosotros</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Jóvenes</a>
+                            <a href="./talent.html" class="nav__link">Jóvenes</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Organizaciones</a>
+                            <a href="./Organi.html" class="nav__link">Organizaciones</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Hospeda</a>
+                            <a href="./hosp.html" class="nav__link active-link">Hospeda</a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="#blog" class="nav__link">Blog</a>
+                            <a href="../index.html#blog" class="nav__link">Blog</a>
                         </li>
                     </ul>
 
@@ -58,6 +57,115 @@
         </header>
 
         <main>
+            <section class="home" id="home">
+                <div class="home__container">
+                    <div class=" container">
+                        
+                        
+                        <a href="#">
+                            <img src="../assets/img/FG-Logo-37.png" alt="" class="home__scroll">
+                        </a>
+
+                    </div>
+                
+                </div>
+
+            
+
+            </section>
+
+            <div class="specialty section container" id="specialty">
+                <div class="specialty__container">
+                    <div class="specialty__box">
+                        <h2 class="section__title">
+                            ¿POR QUÉ HOSPEDAR?
+                        </h2>
+
+                        <div>
+                            <a href="#contact" class="button specialty__button">¡Unirme!</a>
+                        </div>
+                    </div>
+
+                    <div class="specialty__category">
+                        <div class="specialty__group specialty__line">
+                            <i class='bx bx-world specialty__img'></i>
+
+                            <h3 class="specialty__title">Muestra lo mejor de ser Boliviano.</h3>
+                        </div>
+
+                        <div class="specialty__group specialty__line">
+                            <i class='bx bx-group specialty__img'></i>
+                            <h3 class="specialty__title">Conoce otra cultura sin salir de casa</h3>
+                        </div>
+
+                        <div class="specialty__group specialty__line">
+                            <i class='bx bx-happy specialty__img'></i>
+                            <h3 class="specialty__title">Crea amistades para toda la vida.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="quality section" id="premium">
+                <div class="quality__container container">
+                    <h2 class="section__title">
+                        ¡Hospeda a un internacional en casa!
+                    </h2>
+
+                    <div class="quality__content grid">
+                        <div class="quality__images">
+                            <img src="../assets/img/Requisitos_01.png" alt="" class="quality__img-big">
+                        </div>
+
+                        <div class="quality__data">
+                            <h1 class="quality__title">Requisitos Generales</h1>
+                            <table style="width: 100%; border: none;">
+                                <tbody>
+                                    <tr>
+                                        <td class="table__img">
+                                            <i class='bx bx-building-house quality__img-req'></i>
+                                        </td>
+                                        <td class="table__desciption"> 
+                                            Alojamiento para una persona. Un espacio para dormir, baño y condiciones básicas de comodidad
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="table__img">
+                                            <i class='bx bx-bulb quality__img-req'></i>
+                                        </td>
+                                        <td  class="table__desciption">
+                                            Acceso gratuito a los servicios básicos, agua, luz y gas                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__img">
+                                            <i class='bx bx-wifi quality__img-req'></i>
+                                        </td>
+                                        <td  class="table__desciption">
+                                            Acceso gratuito a servicios adicionales como internet                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__img">
+                                            <i class='bx bx-calendar quality__img-req'></i>
+                                        </td>
+                                        <td  class="table__desciption">
+                                            Duración: 6, 8 o más semanas                                        
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="quality__buttons">
+                                <button class="button">
+                                    Postularte
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!--=============== CONTACT ===============-->
             <section class="contact section" id="contact">
                 <div class="container">
@@ -129,6 +237,7 @@
                             </div>
                         </div>
             </section>
+
         </main>
         
         <footer class="footer">
@@ -188,7 +297,7 @@
                     </ul>
 
                     <span class="footer__copy">
-                        &#169; AIESEC. 2022 Todos los derechos reservados
+                        &#169; AIESEC. 2022 Todos los derechos reservados | Desarrollado por Cayolasoft
                     </span>
                 </div>
             </div>
@@ -201,6 +310,6 @@
 
         <script src="../assets/js/mixitup.min.js"></script>
         <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/mainvol.js"></script>
     </body>
 </html>

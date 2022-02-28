@@ -1,11 +1,3 @@
-/*=============== LOADER ===============*/
-onload = ()=>{
-    const load=document.getElementById('load')
-
-    setTimeout(()=>{
-        load.style.display='none'
-    }, 3200)
-}
 
 /*=============== SHOW MENU ===============*/
 /*=============== SHOW MENU ===============*/
@@ -53,17 +45,6 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
-
-
-//===================================== Typewriter Effect =========================
-
-new Typewriter('#typewriter', {
-    strings: ['Sé un pasante','Desarrolla tu Liderazgo', 'Sé un voluntario','Internacionaliza tu empresa',],
-    autoStart: true,
-    loop: true,
-    cursor: "|"
-  });
-  console.log("Typewriter effect is working!")
 
   /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 let mixerPortfolio = mixitup( '.work__container',{
