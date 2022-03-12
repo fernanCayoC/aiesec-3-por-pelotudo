@@ -218,6 +218,40 @@ button {
   right: 1rem;
   cursor: pointer;
 }
+
+.nav li >{
+  float: left;
+}
+
+.nav ul li .children{
+  display: none;
+  position:relative;
+  min-width: 140px;
+  /* padding: 1rem 2rem;
+  background: var(--body-color); */
+  border-radius: 1rem;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 3rem;
+}
+
+.nav li:hover > ul{
+  display: block;
+}
+.nav2__link{
+  text-transform: uppercase;
+  color: var(--text-color-light);
+  font-size: var(--h2-font-size);
+  transition: .3s;
+}
+
+.sub__child{
+  margin-top: 1rem;
+}
+
+.nav2__link:hover{
+  color: var(--title-color);
+}
 /* Show menu */
 .show-menu{
   right: 0;
@@ -240,7 +274,11 @@ button {
 
 /* Active link */
 .active-link{
-  color: var(--first-color);
+  color:var(--text-color);
+}
+
+.active2-link{
+  color:var(--first-color);
 }
 
 /*=============== HOME ===============*/
@@ -372,7 +410,7 @@ button {
   
   .logo__img{
     width: 80px;
-    mix-blend-mode: luminosity;
+   /*  mix-blend-mode: luminosity; */
     color: var(--first-color);
     opacity: .4;
     transition: .4s;
@@ -526,6 +564,7 @@ button {
   
   .specialty__button{
     margin-left: 1.25rem;
+    font-size: var(--small-font-size);
   }
   
   .specialty__category{
@@ -668,6 +707,10 @@ button {
   .contact__form-area textarea{
     resize: none;
   }
+
+  .quality__buttons{
+    margin-top: 1rem;
+  }
   
   /*=============== BREAKPOINTS ===============*/
   /* For small devices */
@@ -750,6 +793,18 @@ button {
       position: relative;
       font-size: var(--normal-font-size);
       text-transform: initial;
+    }
+
+    .nav2__link{
+      position: relative;
+      font-size: var(--normal-font-size);
+      text-transform: initial;
+    }
+
+    .nav ul li .children{
+      position:absolute;
+      background: var(--body-color); 
+      padding: 1rem;
     }
   
     .nav__link::after{
@@ -893,7 +948,7 @@ button {
     }
   
     .quality__img-big{
-      width: 428px;
+      width: 268px;
     }
   
     .quality__img-small{
@@ -925,8 +980,8 @@ button {
     }
   
     .footer__content{
-      grid-template-columns: repeat(4, max-content);
-      column-gap: 4rem;
+      grid-template-columns: repeat(3, max-content);
+      column-gap: 9rem;
       padding-bottom: 5.5rem;
     }
   
