@@ -56,6 +56,8 @@ let mixerPortfolio = mixitup( '.work__container',{
     }
 });
 
+mixerPortfolio.filter('.bene')
+
 /* Link active work */ 
 const linkWork= document.querySelectorAll('.work__item')
 
@@ -65,3 +67,4 @@ function activeWork(){
 }
 
 linkWork.forEach(l=> l.addEventListener('click',activeWork))
+

@@ -393,6 +393,19 @@ button {
     background-color: transparent;
     color: #fff;
   }
+.button--small{
+    padding: .75rem 1rem;
+}
+.button--link{
+    padding: 0;
+    background-color: transparent;
+    color: var(--first-color);
+}
+
+.button--link:hover{
+    background-color: transparent;
+    color: var(--first-color);
+}
 
 /*=============== LOGOS ===============*/
 .logo{
@@ -604,6 +617,159 @@ button {
   .functions_icon:hover {
     color: var(--first-color-alt);
   }
+
+  /*==================== SERVICES ====================*/
+.services_container{
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.services_content{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 4rem 1rem 1.25rem 1.5rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+  transition: .3s;
+  opacity: .8;
+}
+
+.services_content:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+  opacity: 1;
+}
+
+.services_icon{
+  display: block;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+
+.services_title{
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
+  color: #FFF;
+}
+
+.services_button{
+  font-size: var(--small-font-size);
+  color: #FFF;
+}
+
+.services_button:hover .button_icon{
+  transform: translateX(.25rem);
+}
+
+.services_modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  opacity: 0; 
+  visibility: hidden;
+  transition: .3s;
+}
+
+.services_modal-content{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+.services_modal-services{
+  row-gap: 1rem;
+}
+.services_modal-service{
+  display: flex;
+}
+.services_modal-title{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+}
+
+.services_modal-close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+.services_modal-icon{
+  color: var(--first-color);
+  margin-right: var(--mb-0-25);
+}
+/* Active Modal */
+.active-modal{
+  opacity: 1;
+  visibility: visible;
+}
+
+.services__content1{
+  background-image: url(../img/Ingenieria_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  
+}
+.services__content2{
+  background-image: url(../img/Marketing_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.services__content3{
+  background-image: url(../img/finance-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.services__content4{
+  background-image: url(../img/IT_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.services__content5{
+  background-image: url(../img/diseño_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.services__content6{
+  background-image: url(../img/ventas_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.services__content7{
+  background-image: url(../img/BA_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.services__content8{
+  background-image: url(../img/BD_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
   
   /*=============== CONTACT ===============*/
   .contact__container{
@@ -728,6 +894,17 @@ button {
       flex-direction: column;
       row-gap: 1rem;
     }
+
+    .services_container{
+      grid-template-columns: max-content;
+      justify-content: center;
+  }
+  .services_content{
+    padding: 4rem 1.5rem 1.25rem 1.5rem;
+  }
+  .services_modal{
+      padding: 0 .5rem;
+  }
     .home{
       height: 750px;
     } 
@@ -875,6 +1052,20 @@ button {
     justify-content: center;
     column-gap: 3rem;
   }
+
+  .services_container{
+    grid-template-columns:repeat(4,230px);
+    justify-content: center;
+}
+.services_icon{
+    font-size: 2rem;
+}
+.services_content{
+    padding: 7rem 0 2rem 2.5rem;
+}
+.services_modal-content{
+    width: 450px;
+}
   }
   
   /* For large devices */
