@@ -163,14 +163,19 @@ button {
 }
 
 .nav__logo{
-  display: flex;
-  align-items: center;
-  column-gap: .5rem;
-  font-weight: var(--font-bold);
+  width: 25%;
 }
 
 .nav__logo-img{
-  width: 25%;
+  width: 50%;
+}
+.nav__arrow{
+  font-size: 1.2rem;
+  margin-left: auto;
+  transition: .4s;
+}
+.nav__link:hover .nav__arrow{
+  transform: rotate(-180deg);
 }
 
 .nav__toggle{
@@ -202,14 +207,15 @@ button {
 
 .nav__link{
   text-transform: uppercase;
-  color: var(--text-color-light);
+  color: #fff;
   font-size: var(--h2-font-size);
   transition: .3s;
 }
 
 .nav__link:hover{
-  color: var(--first-color);
+  color: var(--title-color);
 }
+
 
 .nav__close{
   font-size: 2rem;
@@ -241,7 +247,7 @@ button {
 }
 .nav2__link{
   text-transform: uppercase;
-  color: var(--text-color-light);
+  color: #FFF;
   font-size: var(--h2-font-size);
   transition: .3s;
 }
@@ -359,7 +365,8 @@ button {
     right: 0;
     margin: 0 auto;
     animation: scroll 3s infinite;
-    padding-bottom: 2rem;
+    padding-bottom: 7rem;
+    padding-top: 7rem;
   }
 
 
@@ -1122,12 +1129,14 @@ button {
       position: relative;
       font-size: var(--normal-font-size);
       text-transform: initial;
+      color: var(--text-color-light);
     }
 
     .nav2__link{
       position: relative;
       font-size: var(--normal-font-size);
       text-transform: initial;
+      color: var(--text-color-light);
     }
 
     .nav ul li .children{

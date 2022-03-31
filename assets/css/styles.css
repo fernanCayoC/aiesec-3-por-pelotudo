@@ -162,14 +162,19 @@ button {
 }
 
 .nav__logo{
-  display: flex;
-  align-items: center;
-  column-gap: .5rem;
-  font-weight: var(--font-bold);
+  width: 25%;
 }
 
 .nav__logo-img{
-  width: 25%;
+  width: 50%;
+}
+.nav__arrow{
+  font-size: 1.2rem;
+  margin-left: auto;
+  transition: .4s;
+}
+.nav__link:hover .nav__arrow{
+  transform: rotate(-180deg);
 }
 
 .nav__toggle{
@@ -178,12 +183,6 @@ button {
   cursor: pointer;
 }
 
-.work__card{
-  background-color: var(--container-color);
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, .1);
-}
 
 
 @media screen and (max-width:767px){
@@ -208,10 +207,9 @@ button {
 
 .nav__link{
   text-transform: uppercase;
-  color: var(--text-color-light);
+  color: #fff;
   font-size: var(--h2-font-size);
   transition: .3s;
-  /* display: flex; */
 }
 
 
@@ -261,6 +259,7 @@ button {
 .nav2__link:hover{
   color: var(--title-color);
 }
+
 /* Show menu */
 .show-menu{
   right: 0;
@@ -939,12 +938,13 @@ button {
 }
 
 @media screen and (min-width: 767px) {
+
   .section{
     padding:  7rem 0 2rem;
   }
 
   .nav{
-    height: calc(var(--header-height) + 1.5rem);
+    height: calc(var(--header-height) + 1rem);
   }
 
   .nav__toggle,
@@ -959,12 +959,13 @@ button {
     display: flex;
   }
 
-
   
   .nav__link{
-    position: relative;
+    /* position: relative; */
+   /*  display: flex; */
     font-size: var(--normal-font-size);
     text-transform: initial;
+    color:var(--text-color-light);
   }
 
   .nav2__link{
