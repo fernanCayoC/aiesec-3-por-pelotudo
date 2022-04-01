@@ -882,6 +882,10 @@ button {
   .quality__buttons{
     margin-top: 1rem;
   }
+
+  .quality__img-big{
+    border-radius: 50%;
+  }
   
   /*=============== BREAKPOINTS ===============*/
   /* For small devices */
