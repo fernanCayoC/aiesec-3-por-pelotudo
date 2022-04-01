@@ -1149,7 +1149,8 @@ button {
     }
   
     .quality__img-big{
-      width: 268px;
+      width: 400px;
+      margin-left: 3rem;
     }
   
     .quality__img-small{
